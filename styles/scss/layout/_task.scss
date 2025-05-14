@@ -1,9 +1,14 @@
 .task {
     display: none;
-    flex-direction: column;
-    gap: 15px;
-    width: 70%;
-    margin: 3rem 0;
+    
+    &--1,
+    &--2,
+    &--3 {
+        flex-direction: column;
+        gap: 15px;
+        width: 70%;
+        margin: 3rem 0;
+    }
 
     &__content {
         background-color: black;
@@ -28,6 +33,15 @@
                     border: 2px solid blue;
                     transition: background-color .3s ease;
                 }
+            }
+        }
+
+        &-answer {
+            display: none;
+            transition: display .3 ease;
+
+            &--rand {
+                display: flex;
             }
         }
     }

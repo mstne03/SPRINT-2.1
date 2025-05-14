@@ -14,6 +14,8 @@
 
 .task {
   display: none;
+}
+.task--1, .task--2, .task--3 {
   flex-direction: column;
   gap: 15px;
   width: 70%;
@@ -41,6 +43,13 @@
   color: blue;
   border: 2px solid blue;
   transition: background-color 0.3s ease;
+}
+.task__content-answer {
+  display: none;
+  transition: display 0.3 ease;
+}
+.task__content-answer--rand {
+  display: flex;
 }
 .task.active {
   display: flex;
