@@ -4,6 +4,7 @@
     const output1 = document.querySelector(".task__content-answer");
     const form = document.querySelector(".task__content-form");
     const randNumber = document.querySelector(".task__content-form-submit-btn--2");
+    const greet = document.querySelector(".task__content-form-submit-btn--3");
 
     links.forEach(link => {
         link.addEventListener("click", () => {
@@ -41,5 +42,18 @@
         const output2 = document.querySelector("#result2");
 
         output2.innerHTML = number;
+    });
+
+    greet.addEventListener("click", () => {
+        const output3 = document.querySelector("#result3");
+
+        const person = {
+            name: "Marc",
+            greet() {
+                return `Hola ${this.name}!`;
+            }
+        };
+
+        output3.innerHTML = person.greet();
     });
 })();
