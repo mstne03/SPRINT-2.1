@@ -3,12 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <title>Sprint 2</title>
 </head>
 <body>
-    
+    <nav class="navbar bg-black">
+        <h2 class="text-center m-4 text-light">Exercise 1.1</h2>
+
+        <ul class="nav m-2">
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link active" 
+                    aria-current="page"
+                    data-tab="1"
+                >
+                    TASK 1
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="2"
+                >
+                    TASK 2
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="3"
+                >
+                    TASK 3
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="4"
+                >
+                    TASK 4
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="5"
+                >
+                    TASK 5
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="6"
+                >
+                    TASK 6
+                </a>
+            </li>
+            <li class="nav-item nav-item--custom">
+                <a 
+                    href="#" 
+                    class="nav-link"
+                    data-tab="7"
+                >
+                    TASK 7
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container d-flex justify-content-center">
+        <section class="task task--1 mx-5 active">
+            <h3 class="my-3 text-center">
+                Task 1:
+                <span>
+                    Arrow function returning n1+n2
+                </span>
+            </h3>
+
+            <div class="task__content container d-flex justify-content-center flex-column shadow gap-3">
+                <form class="task__content-form d-flex flex-column justify-content-start align-items-start gap-3 p-4">
+                    <div class="task__content-form-input mx-3">
+                        <label for="n1">First number</label><br>
+                        <input type="text" name="n1" id="num1">
+                    </div>
+                    
+                    <div class="task__content-form-input mx-3">
+                        <label for="n2">Second number</label><br>
+                        <input type="text" name="n2" id="num2">
+                    </div>
+
+                    <div class="task__content-form-submit d-flex justify-content-center align-items-center mx-3">
+                        <input type="submit" value="OPERATE" class="task__content-form-submit-btn">
+                    </div>
+                </form>
+
+                <div class="task__content-answer d-flex gap-3 justify-content-start align-items-center shadow bg-black text-light m-4 rounded-1 p-3">
+                    <h4 class="m-0">Result:</h4>
+                    <p class="m-0 fs-4" id="result"></p>
+                </div>
+            </div>
+        </section>
+        <section class="task task--2"></section>
+        <section class="task task--3"></section>
+        <section class="task task--4"></section>
+        <section class="task task--5"></section>
+        <section class="task task--6"></section>
+        <section class="task task--7"></section>
+    </main>
 
     <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
