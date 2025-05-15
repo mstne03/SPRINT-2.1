@@ -42,3 +42,24 @@ const processElements = (a,f) => {
 };
 
 processElements(array,squared);
+
+//Task 5
+const charArray = (word) => {
+    const a = [];
+    for (char of word) {
+        a.push(char);
+    }
+
+    return a;
+};
+
+const processChain = (str, f) => {
+    let newStr = "";
+    for (l of str) {
+        newStr += l.toUpperCase();
+    }
+
+    return f(newStr);
+};
+
+console.log(processChain("Hola que tal",charArray));
