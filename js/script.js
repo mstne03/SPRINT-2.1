@@ -27,3 +27,19 @@ const sum = (...n) => {
 };
 
 console.log(sum(2,3,4,5));
+
+//Task 3
+const car1 = {
+    brand: "Ferrari",
+    model: "Testarosa",
+    power: 750
+}
+
+const car2 = {...car1};
+
+car2.brand = "Lamborghini";
+
+console.log("Car1:");
+console.log(car1);
+console.log("Car2:");
+console.log(car2);
