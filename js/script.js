@@ -6,3 +6,12 @@ const process = (n,f) => {
 };
 
 console.log(process(2,operate));
+
+//Task 2
+const sum = (n1,n2) => n1+n2;
+
+const calculate = (n1,n2,f) => {
+    return f(n1,n2);
+};
+
+console.log(calculate(2,3,sum));
