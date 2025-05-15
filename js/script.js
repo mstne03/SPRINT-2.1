@@ -20,3 +20,14 @@ const negativePositive = (n) => n>0 ? `${n} is positive` :
                                 n<0 ? `${n} is negative` :
                                 `${n} is equal to 0`;
 console.log(negativePositive(-2));
+
+//Task 4
+const evenOdd = (array) => {
+    for (n of array) {
+        n%2 == 0 ? 
+                    console.log(`${n} is even.`) :
+                    console.log(`${n} is odd`);
+    }
+};
+
+evenOdd([1,2,3,4,5]);
