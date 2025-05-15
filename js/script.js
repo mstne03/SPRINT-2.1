@@ -43,3 +43,12 @@ console.log("Car1:");
 console.log(car1);
 console.log("Car2:");
 console.log(car2);
+
+//Task 4
+const a = [1,2,3,"Chirimoya","Alcachofa"];
+
+let [n1,n2,...n3] = a;
+
+console.log(n1);
+console.log(n2);
+console.log(n3);
