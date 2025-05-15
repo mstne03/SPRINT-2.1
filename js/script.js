@@ -14,3 +14,9 @@ const compare = (n1,n2) => n1>n2 ? `${n1} is bigger than ${n2}` :
                            n1<n2 ? `${n1} is smaller than ${n2}` :
                            `${n1} is equal to ${n2}`;
 console.log(compare(6,6));
+
+//Task 3
+const negativePositive = (n) => n>0 ? `${n} is positive` :
+                                n<0 ? `${n} is negative` :
+                                `${n} is equal to 0`;
+console.log(negativePositive(-2));
