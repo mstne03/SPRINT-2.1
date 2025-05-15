@@ -21,3 +21,10 @@ console.log(array2.find(n => n>10));
 const array3 = [13,7,8,21];
 
 console.log(array3.reduce((total,current) => total+current));
+
+//Task 5
+const array4 = [1,3,7,10,15,17,11,5,8,12,9];
+
+let result = array4.filter(n => n>=10).map(num => num*2).reduce((total,current) => total+current);
+
+console.log(result);
