@@ -11,3 +11,8 @@ console.log(sqrdArray);
 const evenArray = array.filter(n => n%2 == 0);
 
 console.log(evenArray);
+
+//Task 3
+const array2 = [1,10,8,11];
+
+console.log(array2.find(n => n>10));
