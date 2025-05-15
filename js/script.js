@@ -13,4 +13,5 @@ const promise1 = new Promise((resolve,reject) => {
                       reject("Incorrect username or password."),2000);
 });
 
+//Task 2
 promise1.then(resolve => console.log(resolve)).catch(reject => console.log(reject));
