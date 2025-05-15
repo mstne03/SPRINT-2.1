@@ -52,3 +52,12 @@ let [n1,n2,...n3] = a;
 console.log(n1);
 console.log(n2);
 console.log(n3);
+
+//Task 5
+const arr = [5,2,3];
+
+const operate = (arg1,arg2,arg3) => {
+    return arg1*arg2*arg3;
+};
+
+console.log(operate(...arr));
