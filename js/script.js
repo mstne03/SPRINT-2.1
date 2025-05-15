@@ -61,3 +61,20 @@ const operate = (arg1,arg2,arg3) => {
 };
 
 console.log(operate(...arr));
+
+//Task 6
+const obj1 = {
+    name: "Marc",
+    age: 23,
+    id: 2
+};
+
+const obj2 = {
+    town: "Palamós",
+    province: "Girona",
+    country: "Spain"
+}
+
+const obj3 = {...obj1,...obj2};
+
+console.log(obj3);
