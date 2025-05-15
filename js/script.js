@@ -29,3 +29,16 @@ const waitGreet = (name, f) => {
 };
 
 waitGreet("Marc",returnName);
+
+//Task 4
+const squared = (n) => n**2;
+
+const array = [1,2,3,4,5,6,7,8,9,10];
+
+const processElements = (a,f) => {
+    for (element of a) {
+        console.log(f(element));
+    }
+};
+
+processElements(array,squared);
