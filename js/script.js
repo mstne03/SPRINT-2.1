@@ -14,4 +14,22 @@ const promise1 = new Promise((resolve,reject) => {
 });
 
 //Task 2
-promise1.then(resolve => console.log(resolve)).catch(reject => console.log(reject));
+promise1.then(
+    resolve => 
+    console.log(resolve)).catch(reject => console.log(reject)
+);
+
+//Task 3
+const promise2 = new Promise((resolve,reject) => {
+    let input = "Hello";
+
+    setTimeout(
+        () => input==="Hello" ?
+        resolve("Solved!") :
+        reject("Not solved..."), 2000
+    );
+});
+
+promise2
+        .then(resolve => console.log(resolve))
+        .catch(reject => console.log(reject));
