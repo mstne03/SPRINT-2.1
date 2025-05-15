@@ -141,6 +141,6 @@ const numbers = [];
             messageDisplay.style.display = "flex";
         };
 
-        messageFunc();
+        setTimeout(messageFunc, 3000);
     });
 })();
