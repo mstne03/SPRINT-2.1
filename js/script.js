@@ -16,3 +16,8 @@ console.log(evenArray);
 const array2 = [1,10,8,11];
 
 console.log(array2.find(n => n>10));
+
+//Task 4
+const array3 = [13,7,8,21];
+
+console.log(array3.reduce((total,current) => total+current));
