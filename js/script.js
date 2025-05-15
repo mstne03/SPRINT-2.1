@@ -39,3 +39,13 @@ for (num of arrayNum) {
 
     console.log(num);
 }
+
+//Task 6
+const names2 = ["Anna","Bernat","Clara"];
+
+for (n of names2) {
+    let text = "";
+    text += names2.indexOf(n)+" "+n;
+
+    console.log(text);
+};
