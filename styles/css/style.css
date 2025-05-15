@@ -15,7 +15,7 @@
 .task {
   display: none;
 }
-.task--1, .task--2, .task--3 {
+.task--1, .task--2, .task--3, .task--4, .task--5, .task--6, .task--7 {
   flex-direction: column;
   gap: 15px;
   width: 70%;
@@ -23,10 +23,9 @@
 }
 .task__content {
   background-color: black;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
 .task__content-form {
-  background-color: rgb(248, 243, 236);
   border-radius: 1rem;
   margin: 0.5rem 0.2rem;
 }
@@ -50,6 +49,9 @@
 }
 .task__content-answer--alt {
   display: flex;
+}
+.task__content-answer--alt-greet, .task__content-answer--alt-array, .task__content-answer--alt-message {
+  display: none;
 }
 .task.active {
   display: flex;

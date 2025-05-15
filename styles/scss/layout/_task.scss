@@ -3,7 +3,11 @@
     
     &--1,
     &--2,
-    &--3 {
+    &--3,
+    &--4,
+    &--5,
+    &--6,
+    &--7 {
         flex-direction: column;
         gap: 15px;
         width: 70%;
@@ -12,10 +16,9 @@
 
     &__content {
         background-color: black;
-        border-radius: 1rem;
+        border-radius: .3rem;
 
         &-form {
-            background-color: rgb(248, 243, 236);
             border-radius: 1rem;
             margin: .5rem .2rem;
 
@@ -42,6 +45,12 @@
 
             &--alt {
                 display: flex;
+
+                &-greet,
+                &-array,
+                &-message {
+                    display: none;
+                }
             }
         }
     }
