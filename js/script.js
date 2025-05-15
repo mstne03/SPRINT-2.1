@@ -28,3 +28,14 @@ for (atr in obj) {
     console.log(atr+":");
     console.log(obj[atr]);
 }
+
+//Task 5
+const arrayNum = [1,2,3,4,5,6];
+
+for (num of arrayNum) {
+    if (num==5) {
+        break;
+    }
+
+    console.log(num);
+}
