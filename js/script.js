@@ -15,3 +15,17 @@ const calculate = (n1,n2,f) => {
 };
 
 console.log(calculate(2,3,sum));
+
+//Task 3
+const returnName = (name) => {
+    console.log(name);
+}
+
+const waitGreet = (name, f) => {
+    
+    setTimeout(() => {
+        f(name);
+    }, 2000);
+};
+
+waitGreet("Marc",returnName);
