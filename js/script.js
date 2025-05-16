@@ -54,3 +54,37 @@ async function process () {
 }
 
 process();
+
+//Task 6
+const promise3 = new Promise((resolve,reject) => {
+    let input = "Hello!"
+
+    setTimeout(() => {
+                        console.log(input, "2 seconds");
+                        input==="Hello!" ?
+                            resolve("Solved in 2 seconds."):
+                            reject("Unsolved. 2 seconds.")},
+                            2000);
+});
+
+const promise4 = new Promise((resolve,reject) => {
+    let input = "Bye!"
+
+    setTimeout(() => {
+                        console.log(input,"3 seconds");
+                        input==="Bye!" ?
+                            resolve("Solved in 3 seconds."):
+                            reject("Unsolved. 3 seconds.")},
+                            3000);
+});
+
+async function execute () {
+    try {
+        const results = await Promise.all([promise3, promise4]);
+        console.log("All correct:", results);
+    } catch (error) {
+        console.error("Captured error", error);
+    }
+};
+
+execute();
