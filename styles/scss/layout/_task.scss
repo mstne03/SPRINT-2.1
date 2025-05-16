@@ -1,0 +1,61 @@
+.task {
+    display: none;
+    
+    &--1,
+    &--2,
+    &--3,
+    &--4,
+    &--5,
+    &--6,
+    &--7 {
+        flex-direction: column;
+        gap: 15px;
+        width: 70%;
+        margin: 3rem 0;
+    }
+
+    &__content {
+        background-color: black;
+        border-radius: .3rem;
+
+        &-form {
+            border-radius: 1rem;
+            margin: .5rem .2rem;
+
+            &-submit-btn {
+                background-color: blue;
+                color: white;
+                font-weight: bold;
+                border: 2px solid transparent;
+                border-radius: 4px;
+                padding: .4rem .5rem;
+
+                &:hover {
+                    background-color: white;
+                    color: blue;
+                    border: 2px solid blue;
+                    transition: background-color .3s ease;
+                }
+            }
+        }
+
+        &-answer {
+            display: none;
+            transition: display .3 ease;
+
+            &--alt {
+                display: flex;
+
+                &-greet,
+                &-array,
+                &-message {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+    }
+}

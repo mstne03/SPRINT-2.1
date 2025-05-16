@@ -1,3 +1,58 @@
+.navbar .nav-item--custom {
+  margin: 0.1rem;
+}
+.navbar .nav-item--custom:hover {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.navbar .nav-link.active {
+  background-color: white;
+  border: 2px solid transparent;
+}
 
+.task {
+  display: none;
+}
+.task--1, .task--2, .task--3, .task--4, .task--5, .task--6, .task--7 {
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+  margin: 3rem 0;
+}
+.task__content {
+  background-color: black;
+  border-radius: 0.3rem;
+}
+.task__content-form {
+  border-radius: 1rem;
+  margin: 0.5rem 0.2rem;
+}
+.task__content-form-submit-btn {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+}
+.task__content-form-submit-btn:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  transition: background-color 0.3s ease;
+}
+.task__content-answer {
+  display: none;
+  transition: display 0.3 ease;
+}
+.task__content-answer--alt {
+  display: flex;
+}
+.task__content-answer--alt-greet, .task__content-answer--alt-array, .task__content-answer--alt-message {
+  display: none;
+}
+.task.active {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
