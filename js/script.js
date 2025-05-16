@@ -5,8 +5,8 @@ const promise1 = new Promise((resolve,reject) => {
     const user = "john23";
     const password = "23vv%";
 
-    const inputUser = "john23";
-    const inputPassword = "23vv%";
+    const inputUser = "john22";
+    const inputPassword = "23vvv%";
 
     setTimeout(() => (user===inputUser && password===inputPassword) ? 
                       resolve("User logged in! Hello world!") :
@@ -35,11 +35,22 @@ promise2
         .catch(reject => console.log(reject));
 
 //Task 4
+/*async function process () {
+    console.log("Loading...");
+    console.log(await promise1);
+}
+
+process();*/
+
+//Task 5
 async function process () {
     console.log("Loading...");
-    await promise1
-                .then(resolve => console.log(resolve))
-                .catch(reject => console.log(reject));
+    try {
+        const result = await promise1;
+        console.log(result);
+    } catch (error) {
+        console.error("Captured:", error);
+    }
 }
 
 process();
