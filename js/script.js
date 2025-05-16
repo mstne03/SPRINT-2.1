@@ -33,3 +33,13 @@ const promise2 = new Promise((resolve,reject) => {
 promise2
         .then(resolve => console.log(resolve))
         .catch(reject => console.log(reject));
+
+//Task 4
+async function process () {
+    console.log("Loading...");
+    await promise1
+                .then(resolve => console.log(resolve))
+                .catch(reject => console.log(reject));
+}
+
+process();
