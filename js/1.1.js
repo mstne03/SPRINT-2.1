@@ -73,7 +73,7 @@ const numbers = [];
     const greetDisplay = document.querySelector(".task__content-answer--alt-greet");
 
     greet.addEventListener("click", () => {
-        const greetFunc = () => {
+        greet.addEventListener("click", () => {
             const output3 = document.querySelector("#result3");
             let personName = document.getElementById("name").value;
 
@@ -81,18 +81,11 @@ const numbers = [];
                 personName = "nobody";
             }
 
-            const person = {
-                name: personName,
-                greet() {
-                    return `Greetings ${this.name}!`;
-                }
-            };
+            const person = new Person(personName);
 
             output3.innerHTML = person.greet();
             greetDisplay.style.display = "flex";
-        };
-
-        greetFunc();
+        });
     });
 
     //Task 4
