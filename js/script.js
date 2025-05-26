@@ -82,12 +82,7 @@ const numbers = [];
                 personName = "nobody";
             }
 
-            const person = {
-                name: personName,
-                greet() {
-                    return `Greetings ${this.name}!`;
-                }
-            };
+            const person = new Person(personName);
 
             output3.innerHTML = person.greet();
             greetDisplay.style.display = "flex";
