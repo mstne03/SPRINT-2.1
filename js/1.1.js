@@ -73,19 +73,17 @@ const numbers = [];
     const greetDisplay = document.querySelector(".task__content-answer--alt-greet");
 
     greet.addEventListener("click", () => {
-        greet.addEventListener("click", () => {
-            const output3 = document.querySelector("#result3");
-            let personName = document.getElementById("name").value;
+        const output3 = document.querySelector("#result3");
+        let personName = document.getElementById("name").value;
 
-            if (!personName) {
-                personName = "nobody";
-            }
+        if (!personName) {
+            personName = "nobody";
+        }
 
-            const person = new Person(personName);
+        const person = new Person(personName);
 
-            output3.innerHTML = person.greet();
-            greetDisplay.style.display = "flex";
-        });
+        output3.innerHTML = person.greet();
+        greetDisplay.style.display = "flex";
     });
 
     //Task 4

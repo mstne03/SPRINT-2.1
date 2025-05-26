@@ -8,8 +8,6 @@ class Person {
     }
 
     greet () {
-        () => {
-            `Greetings, ${this._name}!`;
-        }
+        return `Greetings ${this._name}!`;
     }
 }

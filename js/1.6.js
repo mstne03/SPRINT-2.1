@@ -47,11 +47,12 @@ console.log("*******************************************************");
     }
 
     //Task 6
-    const names2 = ["Anna","Bernat","Clara"];
+    const names2 = ["Anna","Bernat","Clara","Clara"];
+    let i = 0;
 
     for (n of names2) {
         let text = "";
-        text += names2.indexOf(n)+" "+n;
+        text += (i++)+" "+n;
 
         console.log(text);
     };
