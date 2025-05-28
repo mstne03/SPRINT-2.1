@@ -26,7 +26,7 @@ All of the tasks are demonstrated and can be checked out through the console.
 - **SCSS** for modular and maintainable styling (first exercise only)
 
 ## 📁 Folder Structure
-
+`
 ├── Ex_1.1.html
 ├── Ex_1.2.html
 ├── ...
@@ -40,7 +40,7 @@ All of the tasks are demonstrated and can be checked out through the console.
 │ ├── 1.2.js
 │ └── ...
 └── README.md
-
+`
 
 ## ⚠️ Known Limitations
 
