@@ -51,3 +51,4 @@ All of the tasks are demonstrated and can be checked out through the console.
 ## 🛠️ Setup
 
 No installation is required. Simply clone the repository and open `Ex_1.*.html` in a browser:
+```git clone https://github.com/mstne03/SPRINT-2.1.git```
