@@ -26,10 +26,11 @@ All of the tasks are demonstrated and can be checked out through the console.
 - **SCSS** for modular and maintainable styling (first exercise only)
 
 ## 📁 Folder Structure
-
-├── Ex_1.1.html
-├── Ex_1.2.html
-├── ...
+```
+├── index.html
+├── pages/
+│ └── Ex_1.1.html
+│ └── ...
 ├── styles/
 │ └── scss
 │   └── main.scss
@@ -40,7 +41,7 @@ All of the tasks are demonstrated and can be checked out through the console.
 │ ├── 1.2.js
 │ └── ...
 └── README.md
-
+```
 
 ## ⚠️ Known Limitations
 
@@ -50,4 +51,7 @@ All of the tasks are demonstrated and can be checked out through the console.
 
 ## 🛠️ Setup
 
-No installation is required. Simply clone the repository and open `Ex_1.*.html` in a browser:
+No installation is required. Simply clone the repository and open `index.html` in a browser to navigate through the diferent exercises. How you can clone the repository:
+```
+git clone https://github.com/mstne03/SPRINT-2.1.git
+```
