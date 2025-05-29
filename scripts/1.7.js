@@ -1,9 +1,5 @@
 //Exercise 1.7
 
-console.log("*******************************************************");
-console.log("***********************Exercise 1.7********************");
-console.log("*******************************************************");
-
 (() => {
 
     //Task 1
@@ -41,12 +37,12 @@ console.log("*******************************************************");
             .catch(reject => console.log(reject));
 
     //Task 4
-    /*async function process () {
+    async function process () {
         console.log("Loading...");
         console.log(await promise1);
     }
 
-    process();*/
+    process();
 
     //Task 5
     async function process () {

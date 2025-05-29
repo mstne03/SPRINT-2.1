@@ -1,9 +1,5 @@
 //Exercise 1.5
 
-console.log("*******************************************************");
-console.log("***********************Exercise 1.5********************");
-console.log("*******************************************************");
-
 (() => {
 
     //Task 1
@@ -26,12 +22,12 @@ console.log("*******************************************************");
     //Task 4
     const arrayNumbers3 = [13,7,8,21];
 
-    console.log(arrayNumbers3.reduce((total,current) => total+current));
+    console.log(arrayNumbers3.reduce((total,current) => total+current, 0));
 
     //Task 5
     const arrayNumbers4 = [1,3,7,10,15,17,11,5,8,12,9];
 
-    let result = arrayNumbers4.filter(n => n>=10).map(num => num*2).reduce((total,current) => total+current);
+    let result = arrayNumbers4.filter(n => n>=10).map(num => num*2).reduce((total,current) => total+current, 0);
 
     console.log(result);
 

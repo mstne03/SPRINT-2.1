@@ -31,8 +31,7 @@ console.log("*******************************************************");
     };
 
     for (atr in obj) {
-        console.log(atr+":");
-        console.log(obj[atr]);
+        console.log(`${atr}: ${obj[atr]}`);
     }
 
     //Task 5
@@ -51,9 +50,6 @@ console.log("*******************************************************");
     let i = 0;
 
     for (n of names2) {
-        let text = "";
-        text += (i++)+" "+n;
-
-        console.log(text);
+        console.log(`${++i} ${n}`);
     };
 })();
